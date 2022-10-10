@@ -130,15 +130,15 @@ callWithJQuery ($, Plotly) ->
         return result
 
     $.pivotUtilities.plotly_renderers =
-        "Horizontal Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{label}: %{value}", orientation: 'h'},
+        "Horizontal Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{value}", orientation: 'h'},
             {barmode: 'group'}, true)
-        "Horizontal Stacked Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{label}: %{value}", orientation: 'h'},
+        "Horizontal Stacked Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{value}", orientation: 'h'},
             {barmode: 'relative'}, true)
-        "Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{label}"}, {barmode: 'group'})
-        "Stacked Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{label}"}, {barmode: 'relative'})
-        "Line Chart": makePlotlyChart({texttemplate: "%{label}: %{value}"})
-        "Area Chart": makePlotlyChart({stackgroup: 1,texttemplate: "%{label}: %{value}"})
-        "Scatter Chart": makePlotlyScatterChart({texttemplate: "%{label}: %{value}"})
+        "Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{value}"}, {barmode: 'group'})
+        "Stacked Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{value}"}, {barmode: 'relative'})
+        "Line Chart": makePlotlyChart({texttemplate: "%{value}"})
+        "Area Chart": makePlotlyChart({stackgroup: 1,texttemplate: "%{value}"})
+        "Scatter Chart": makePlotlyScatterChart({texttemplate: "%{value}"})
         'Multiple Pie Chart': makePlotlyChart(
-            {type: 'pie', scalegroup: 1, hoverinfo: 'label+value', texttemplate: "%{label}: %{value}"},
+            {type: 'pie', scalegroup: 1, hoverinfo: 'label+value', texttemplate: "%{value}"},
             {}, true)
