@@ -191,45 +191,45 @@
     return $.pivotUtilities.plotly_renderers = {
       "Horizontal Bar Chart": makePlotlyChart({
         type: 'bar',
-        texttemplate: "%{label}: %{value}",
+        texttemplate: "%{value}",
         orientation: 'h'
       }, {
         barmode: 'group'
       }, true),
       "Horizontal Stacked Bar Chart": makePlotlyChart({
         type: 'bar',
-        texttemplate: "%{label}: %{value}",
+        texttemplate: "%{value}",
         orientation: 'h'
       }, {
         barmode: 'relative'
       }, true),
       "Bar Chart": makePlotlyChart({
         type: 'bar',
-        texttemplate: "%{label}"
+        texttemplate: "%{value}"
       }, {
         barmode: 'group'
       }),
       "Stacked Bar Chart": makePlotlyChart({
         type: 'bar',
-        texttemplate: "%{label}"
+        texttemplate: "%{value}"
       }, {
         barmode: 'relative'
       }),
       "Line Chart": makePlotlyChart({
-      texttemplate: "%{label}: %{value}"
+      texttemplate: "%{value}"
       }),
       "Area Chart": makePlotlyChart({
         stackgroup: 1,
-        texttemplate: "%{label}: %{value}"
+        texttemplate: "%{value}"
       }),
       "Scatter Chart": makePlotlyScatterChart({
-      texttemplate: "%{label}: %{value}"
+      texttemplate: "%{value}"
       }),
       'Multiple Pie Chart': makePlotlyChart({
         type: 'pie',
         scalegroup: 1,
         hoverinfo: 'label+value',
-        texttemplate: "%{label}: %{value}"
+        texttemplate: "%{value}"
       }, {}, true)
     };
   });
