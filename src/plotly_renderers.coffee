@@ -130,7 +130,7 @@ callWithJQuery ($, Plotly) ->
         return result
 
     $.pivotUtilities.plotly_renderers =
-        "Horizontal Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{value*100}"+"%", orientation: 'h'},
+        "Horizontal Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{value}", orientation: 'h'},
             {barmode: 'group'}, true)
         "Horizontal Stacked Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{value}", orientation: 'h'},
             {barmode: 'relative'}, true)
