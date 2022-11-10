@@ -134,7 +134,7 @@ callWithJQuery ($, Plotly) ->
             {barmode: 'group'}, true)
         "Horizontal Stacked Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{value}", orientation: 'h'},
             {barmode: 'relative'}, true)
-        "Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{value}"}, {barmode: 'group'})
+        "Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{value*100}"}, {barmode: 'group'})
         "Stacked Bar Chart": makePlotlyChart({type: 'bar',texttemplate: "%{value}"}, {barmode: 'relative'})
         "Line Chart": makePlotlyChart({texttemplate: "%{value}"})
         "Area Chart": makePlotlyChart({stackgroup: 1,texttemplate: "%{value}"})

@@ -205,7 +205,7 @@
       }, true),
       "Bar Chart": makePlotlyChart({
         type: 'bar',
-        texttemplate: "%{value}"
+        texttemplate: "%{value*100}"
       }, {
         barmode: 'group'
       }),
